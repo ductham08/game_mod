@@ -1,0 +1,126 @@
+.search_page {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.search_page .bg_color {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 998;
+}
+
+.search_page .content {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 15px;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    height: max-content;
+}
+
+.search_page .content .title_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+
+.search_page .content .title_search button {
+    background-color: transparent;
+    border: none;
+}
+
+.search_page .content .title_search button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.search_page .content .title_search p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.search_page .content .main_search .item_form {
+    display: flex;
+    width: 100%;
+    background-color: #A65EEA;
+    padding: 5px 10px 5px 5px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.search_page .content .main_search .item_form input {
+    order: 2;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: white;
+}
+
+.search_page .content .main_search .item_form button {
+    border: none;
+    background-color: transparent;
+    border-right: 1px solid white;
+    padding: 0px 5px;
+}
+
+.search_page .content .main_search .item_game_search {
+    margin-bottom: 15px;
+}
+
+.search_page .content .main_search .item_game_search .title_item_game {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search_page .content .main_search .item_game_search .title_item_game p {
+    margin: 0;
+    padding: 0px 0px 0px 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.search_page .content .main_search .item_game_search .list_game {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search_page .content .main_search .item_game_search .list_game .item_game {
+    width: 19%;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.search_page .content .main_search .item_game_search .list_game .item_game img {
+    border-radius: 7px;
+}
+
+@media (max-width:767px) {
+    .search_page .content {
+        width: 100%;
+    }
+}
+
+.search_page {
+    display: none;
+}
+
+.search_page.active_search {
+    display: block;
+}

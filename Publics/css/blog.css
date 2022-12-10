@@ -1,0 +1,118 @@
+.blog_page .main {
+    margin: 25px 0px;
+}
+
+.blog_page .main .title_page h5 {
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.blog_page .main .title_page .logo {
+    display: none;
+}
+
+.blog_page .main .content_page .list_blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog_page .main .content_page .list_blog a {
+    text-decoration: none;
+}
+
+.blog_page .main .content_page .list_blog .item_blog {
+    position: relative;
+    border: 5px solid transparent;
+    background: #f2f2f2;
+    background-clip: padding-box;
+    width: 19%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-image-slice: 1;
+    border-width: 1px;
+}
+
+.blog_page .main .content_page .list_blog .item_blog::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(to left, #743ad5, #d53a9d);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.blog_page .main .content_page .list_blog .item_blog .img_blog {
+    height: 100px;
+}
+
+.blog_page .main .content_page .list_blog .item_blog img {
+    border-radius: 5px;
+    height: 100%;
+}
+
+.blog_page .main .content_page .list_blog .item_blog .content_blog {
+    margin: 5px 0px 0px 0px;
+}
+
+.blog_page .main .content_page .list_blog .item_blog .content_blog b {
+    color: black;
+}
+
+.blog_page .main .page_number .list_number_page {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.blog_page .main .page_number {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.blog_page .main .page_number button {
+    text-align: center;
+    margin: 0px 2px;
+    width: 30px;
+    height: 31px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #99A2B3;
+}
+
+.blog_page .main .page_number button svg {
+    width: 15px;
+    height: 15px;
+    margin: 2px 0px;
+}
+
+.blog_page .main .page_number button.active {
+    background-color: #A65EEA;
+    color: white;
+    border: none;
+}
+
+@media (max-width:769px) {
+    .blog_page .main .content_page .list_blog .item_blog {
+        width: 48%;
+        padding: 5px;
+    }
+    .blog_page .main .title_page {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog_page .main .title_page .logo {
+        display: block;
+        width: 40px;
+    }
+}

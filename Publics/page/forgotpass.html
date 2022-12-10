@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu</title>
+
+    <!-- Base Css -->
+    <link rel="stylesheet" href="../css/style.base.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/forgotpass.css">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="wellcome_page">
+        <div class="col-md-4 col-12">
+            <div class="main">
+                <!-- Main -->
+                <div class="container">
+                    <div class="nav">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7071 17.7929C11.0976 18.1834 11.0976 18.8166 10.7071 19.2071C10.3166 19.5976 9.68339 19.5976 9.29286 19.2071L3.49997 13.4142C2.71892 12.6332 2.71892 11.3668 3.49997 10.5858L9.29286 4.79289C9.68339 4.40237 10.3166 4.40237 10.7071 4.79289C11.0976 5.18342 11.0976 5.81658 10.7071 6.20711L5.91419 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H5.91418L10.7071 17.7929Z" fill="#2F3643"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="form">
+                        <div class="logo col-1">
+                            <img src="../images/Logo.png" width="100%" alt="">
+                        </div>
+                        <div class="title">
+                            <h5>Quên mật khẩu?</h5>
+                            <p>Chúng tôi sẽ gửi đến email của bạn một mã OTP để lấy lại mật khẩu.</p>
+                        </div>
+                        <div class="item_form">
+                            <form>
+                                <p>Email *</p>
+                                <input type="text" class="email" name="email" placeholder="Nhập địa chỉ email">
+                                <button class="btn_submit">Gửi mã</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop -->
+                <div class="box_1 ">
+                </div>
+                <div class="box_2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        $(".email").change(function() {
+            $(".btn_submit").css({
+                "background-image": "linear-gradient(to right top, #f515c4, #b676ff, #57a5ff, #00c4ff, #32daff)"
+            })
+        });
+    </script>
+</body>
+
+</html>

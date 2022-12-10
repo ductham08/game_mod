@@ -1,0 +1,464 @@
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter/static/Inter-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+
+.header {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.header .header_left ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header .header_left ul li img {
+    width: 30px;
+}
+
+.header .header_left ul li {
+    padding: 0px 20px;
+    margin: 0;
+    list-style: none;
+    border-right: 1px solid #99A2B3;
+}
+
+.header .header_left ul li a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header .header_left ul li a p {
+    padding: 0 10px;
+    margin: 0;
+    color: #29303C;
+    font-weight: 700;
+}
+
+.header .header_left ul li.clear {
+    border: none;
+}
+
+
+/* Li home */
+
+.header .header_left ul li.home a p {
+    background: linear-gradient(to right, #32DAFF 0%, #F515C4 50.58%, #4945FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header right */
+
+.header .header_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .header_right .info_user {
+    padding: 3px 20px;
+    border: 1px solid #00000010;
+    border-radius: 10px;
+}
+
+.header .header_right .info_user a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.header .header_right .info_user .avatar {
+    width: 35px;
+    margin: 0px 10px 0px 0px;
+}
+
+.header .header_right .info_user .avatar img {
+    border-radius: 100px;
+}
+
+.header .header_right .info_user .name_user {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Input search */
+
+.header .header_right .form_search {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+.header .header_right .form_search .item_form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header .header_right .form_search .item_form input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    order: 2;
+}
+
+.header .header_right .form_search .item_form button {
+    order: 1;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+
+
+/* Menu mobile */
+
+.header .menu_mobile {
+    display: none;
+    background-color: white;
+}
+
+.header .menu_mobile ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu_mobile ul li {
+    width: 20vh;
+    margin: 0;
+    list-style: none;
+}
+
+.header .menu_mobile ul li a {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.header .menu_mobile ul li a svg {
+    width: 18px;
+    height: 18px;
+}
+
+.header .menu_mobile ul li a p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* active */
+
+.header .menu_mobile ul li.home {
+    border-radius: 50px 0px 0px 50px;
+}
+
+.header .menu_mobile ul li {
+    display: block;
+}
+
+.header .menu_mobile ul li.user {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.header .menu_mobile ul li.active {
+    color: white;
+    background: rgb(50, 218, 255);
+    background: linear-gradient(234deg, rgba(50, 218, 255, 1) 19%, rgba(109, 159, 237, 1) 39%, rgba(245, 21, 196, 0.9304096638655462) 73%, rgba(73, 69, 255, 1) 99%);
+}
+
+.header .menu_mobile ul li.active .game path {
+    fill: none !important;
+    stroke: white !important;
+}
+
+.header .menu_mobile ul li.active .search rect {
+    fill: none !important;
+    stroke: white !important;
+}
+
+.header .menu_mobile ul li.active svg path {
+    fill: white;
+}
+
+.header .menu_mobile ul li.active p {
+    color: white;
+}
+
+@media (max-width:768px) {
+    .header {
+        box-shadow: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        z-index: 999;
+    }
+    .header .menu_desktop {
+        display: none;
+    }
+    .header .menu_mobile {
+        display: block;
+        padding: 0 10px;
+        margin: auto;
+    }
+}
+
+
+/* End header */
+
+
+/*  */
+
+
+/*  */
+
+
+/* Footer */
+
+.footer {
+    background: rgb(203, 172, 255);
+    background: linear-gradient(180deg, rgba(203, 172, 255, 1) 0%, rgba(138, 88, 219, 1) 100%);
+    padding: 10px 0px;
+}
+
+.footer .container {
+    padding: 0;
+}
+
+.footer .logo {
+    width: 35px;
+    display: block;
+    margin: auto;
+}
+
+.footer .contact {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .contact .icon_contact {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer .contact .icon_contact a {
+    padding: 0px 10px 0px 0px;
+    text-decoration: none;
+}
+
+.footer .text_contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer .text_contact p {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.footer .text_contact p a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .active_border {
+    border-right: 1px solid white;
+}
+
+.footer .active_text {
+    text-align: right;
+}
+
+@media (max-width:768px) {
+    .footer .active_border {
+        border: none;
+    }
+    .footer .active_text {
+        text-align: left;
+    }
+    .footer .text_contact p a {
+        padding: 0;
+    }
+    .footer .contact {
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+
+/* End footer */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/* Search */
+
+.search_page {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.search_page .bg_color {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 998;
+}
+
+.search_page .content {
+    position: fixed;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 15px;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    overflow: auto;
+}
+
+.search_page .content .title_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+
+.search_page .content .title_search button {
+    background-color: transparent;
+    border: none;
+}
+
+.search_page .content .title_search button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.search_page .content .title_search p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.search_page .content .main_search .item_form {
+    display: flex;
+    width: 100%;
+    background-color: #A65EEA;
+    padding: 5px 10px 5px 5px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.search_page .content .main_search .item_form input {
+    order: 2;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: white;
+}
+
+.search_page .content .main_search .item_form button {
+    border: none;
+    background-color: transparent;
+    border-right: 1px solid white;
+    padding: 0px 5px;
+}
+
+.search_page .content .main_search .item_game_search {
+    margin-bottom: 15px;
+}
+
+.search_page .content .main_search .item_game_search .title_item_game {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search_page .content .main_search .item_game_search .title_item_game p {
+    margin: 0;
+    padding: 0px 0px 0px 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.search_page .content .main_search .item_game_search .list_game {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search_page .content .main_search .item_game_search .list_game .item_game {
+    width: 19%;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.search_page .content .main_search .item_game_search .list_game .item_game img {
+    border-radius: 7px;
+}
+
+@media (max-width:767px) {
+    .search_page .content {
+        width: 100%;
+    }
+}
+
+.search_page {
+    display: none;
+}
+
+.search_page.active_search {
+    display: block;
+}
